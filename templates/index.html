@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <tr>
+            <th>Symbol</th>
+            <th>USD</th>
+            <th>EUR</th>
+        </tr>
+        {% for sym in data %}
+            <tr>
+                <td>{{ sym }}</td>
+                <td>{{ data[sym]['USD'] }}</td>
+                <td>{{ data[sym]['EUR'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
