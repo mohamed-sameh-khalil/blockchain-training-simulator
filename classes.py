@@ -44,7 +44,11 @@ class Chain:
 
 
     def isvalid(self) -> bool:
-        # TODO
+        for i in range(1, len(self.chain)):
+            if self.chain[i].prevhash != self.chain[i-1].hash():
+                return False
+            if not self.chain[i].hash().startswith(self.starter):
+                return False        
         return True
 
 
