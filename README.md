@@ -1,5 +1,5 @@
 # blockchain-training-simulator
-this is a simulator for a simple blockchain
+this is a web application simulator for a simple blockchain
 
 # How to use
 1) type "flask run" from any terminal in the project folder
