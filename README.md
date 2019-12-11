@@ -12,7 +12,7 @@ this is a web application simulator for a simple blockchain
 
 
 
-# how is was made:
+# how it was made:
 the frontend of the simulator was made by flask framework
 
 the backend was done in plain python
